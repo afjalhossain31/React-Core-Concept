@@ -1,14 +1,33 @@
 import { useState } from 'react'
 
 import './App.css'
+import Todo from './Todo'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const time = 40;
 
   return (
     <>
       <h1>Core Concepts</h1>
-      <Person></Person>
+
+      <Todo
+        task='Learn React'
+        isDone={true} time={time}>
+      </Todo>
+
+      <Todo
+        task='Build a Todo App'
+        isDone={false}
+        time={time}>
+      </Todo>
+
+      <Todo
+        task='Master JavaScript'
+        isDone={false}
+        time={time}>
+      </Todo>
+
+      {/* <Person></Person>
       <Player name="Tamin " runs="5000"></Player>
       <Subject></Subject>
       <Sports></Sports>
@@ -21,12 +40,12 @@ function App() {
       <User1 age={25}></User1>
       <User2 isLoggedIn={true}></User2>
       <User3 skills={["JavaScript", "React", "Node.js"]}></User3>
-      <User4 user={{ name: "Afjal Hossain", age: 25 }}></User4>
+      <User4 user={{ name: "Afjal Hossain", age: 25 }}></User4> */}
     </>
+
   )
 }
 // 1 .String Prop
-
 function User({ name }) {
   return (
     <p>Name: {name}</p>
@@ -95,7 +114,6 @@ function Developer(props) {
     </div>
   )
 }
-
 
 function Person() {
   const name = "Afjal Hossain";
