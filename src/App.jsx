@@ -16,10 +16,21 @@ function App() {
       <Developer name="Afjal" tech="JavaScript"></Developer>
       <Developer name="Samad" tech="Python"></Developer>
       <Developer name="Babu" tech="Java"></Developer>
+      <Profile name="Afjal Hossain" age="25" city="Dhaka"></Profile>
       
 
     </>
   )
+}
+
+function Profile({ name, age, city }) {
+  return (
+    <div>
+      <h1>{name}</h1>
+      <p>Age: {age}</p>
+      <p>City: {city}</p>
+    </div>
+  );
 }
 
 // const {name, tech} ={name: "Afjal", tech: "JavaScript"};
