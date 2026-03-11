@@ -9,38 +9,28 @@ function App() {
     <>
       <h1>Core Concepts</h1>
       <Person></Person>
+      <Player name="Tamin " runs="5000"></Player>
       <Subject></Subject>
       <Sports></Sports>
       <Student></Student>
       <Developer name="Afjal" tech="JavaScript"></Developer>
       <Developer name="Samad" tech="Python"></Developer>
       <Developer name="Babu" tech="Java"></Developer>
-     
+      
+
     </>
   )
 }
 
-function Person() {
-  const name = "Afjal Hossain";
-  const age = 25;
-// Inline CSS style for the Person component
-  const personStyle ={
-    color: 'white',
-    margin: '10px',
-    padding: '10px',
-    border: 'blue solid 2px',
-    textAlign: 'left'
-    
-  }
-
+// const {name, tech} ={name: "Afjal", tech: "JavaScript"};
+function Player({ name, runs }) {
   return (
-    <div style={personStyle}>
-      <h2>This is a {name} {age} years old.</h2>
-      <p>This is a simple React component.</p>
+    <div className='Subject'>
+      <h3>Name : {name}</h3>
+      <p>Runs : {runs}</p>
     </div>
   )
 }
-
 function Developer(props) {
   console.log(props);
   return (
@@ -50,6 +40,28 @@ function Developer(props) {
     }}>
       <p>Developer: {props.name}</p>
       <p>Techonology: {props.tech}</p>
+    </div>
+  )
+}
+
+
+function Person() {
+  const name = "Afjal Hossain";
+  const age = 25;
+  // Inline CSS style for the Person component
+  const personStyle = {
+    color: 'white',
+    margin: '10px',
+    padding: '10px',
+    border: 'blue solid 2px',
+    textAlign: 'left'
+
+  }
+
+  return (
+    <div style={personStyle}>
+      <h2>This is a {name} {age} years old.</h2>
+      <p>This is a simple React component.</p>
     </div>
   )
 }
