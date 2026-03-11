@@ -17,12 +17,54 @@ function App() {
       <Developer name="Samad" tech="Python"></Developer>
       <Developer name="Babu" tech="Java"></Developer>
       <Profile name="Afjal Hossain" age="25" city="Dhaka"></Profile>
-      
-
+      <User name="Afjal Hossain"></User>
+      <User1 age={25}></User1>
+      <User2 isLoggedIn={true}></User2>
+      <User3 skills={["JavaScript", "React", "Node.js"]}></User3>
+      <User4 user={{ name: "Afjal Hossain", age: 25 }}></User4>
     </>
   )
 }
+// 1 .String Prop
 
+function User({ name }) {
+  return (
+    <p>Name: {name}</p>
+  )
+}
+// 2. Number Prop
+function User1({ age }) {
+  return (
+    <p>Age: {age}</p>
+  )
+}
+// 3. Boolean Prop
+function User2({ isLoggedIn }) {
+  return (
+    <div>
+      <p>Is Logged In: {isLoggedIn ? "Yes" : "No"}</p>
+    </div>
+
+  )
+}
+
+// 4. Array Prop
+
+function User3({ skills }) {
+  return <p>{skills.join(", ")}</p>;
+}
+
+// 5. Object Prop
+function User4({ user }) {
+  return (
+    <div>
+      <h2>{user.name}</h2>
+      <p>{user.age}</p>
+    </div>
+  );
+}
+
+//Destructuring props in the Profile component
 function Profile({ name, age, city }) {
   return (
     <div>
@@ -32,7 +74,6 @@ function Profile({ name, age, city }) {
     </div>
   );
 }
-
 // const {name, tech} ={name: "Afjal", tech: "JavaScript"};
 function Player({ name, runs }) {
   return (
