@@ -18,11 +18,11 @@
 
 // }
 
-export default function ToDo({ task, isDone, time }) {
+// export default function Todo({ task, isDone, time }) {
 
-    if (isDone === true) {
-        return <li>Done : {task} is Done. Duration : {time} minutes</li>
-    } 
-    return <li>To be done : {task} is Not Done</li>
+//     if (isDone === true) {
+//         return <li>Done : {task} is Done. Duration : {time} minutes</li>
+//     } 
+//     return <li>To be done : {task} is Not Done</li>
 
-}
+// }

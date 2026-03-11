@@ -1,7 +1,8 @@
 import { useState } from 'react'
 
 import './App.css'
-import Todo from './Todo'
+// import Todo from './Todo'
+import ToDo from './conditional-Rendering'
 
 function App() {
   const time = 40;
@@ -9,23 +10,25 @@ function App() {
   return (
     <>
       <h1>Core Concepts</h1>
+    {/* <ToDO></ToDO> */}
 
-      <Todo
+      <ToDo
         task='Learn React'
         isDone={true} time={time}>
-      </Todo>
+      </ToDo>
 
-      <Todo
+      <ToDo
         task='Build a Todo App'
         isDone={false}
         time={time}>
-      </Todo>
+      </ToDo>
 
-      <Todo
+      <ToDo
         task='Master JavaScript'
-        isDone={false}
+        isDone={true}
         time={time}>
-      </Todo>
+      </ToDo>
+
 
       {/* <Person></Person>
       <Player name="Tamin " runs="5000"></Player>
