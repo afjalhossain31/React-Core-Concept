@@ -1,16 +1,50 @@
 
-my-vite-app/
-├── public/              # static assets (images, favicon, etc.)
+# React Core Concepts
+
+A React learning project built with Vite, covering fundamental to advanced React concepts.
+
+## Project Structure
+```
+React-Core-Concept/
+├── public/                      # Static assets
 ├── src/
-│   ├── assets/          # images, fonts, etc.
-│   ├── components/      # reusable UI pieces
-│   ├── App.jsx / App.tsx
-│   ├── main.jsx / main.tsx   # entry point
-│   └── index.css
-├── index.html           # single HTML entry point (Vite injects JS/CSS)
-├── vite.config.js       # Vite configuration
-├── package.json
-└── ...other config files
+│   ├── assets/                  # Images, fonts, etc.
+│   ├── App.jsx                  # Main App component
+│   ├── App.css                  # App styles
+│   ├── main.jsx                 # Entry point
+│   ├── index.css                # Global styles
+│   ├── conditional-Rendering.jsx
+│   ├── library.jsx
+│   └── Todo.jsx
+├── index.html                   # HTML entry point
+├── vite.config.js              # Vite configuration
+├── eslint.config.js            # ESLint configuration
+├── package.json                # Dependencies
+├── .gitignore                  # Git ignore rules
+└── README.md                   # This file
+```
+
+## Getting Started
+
+### Installation
+```bash
+npm install
+```
+
+### Development
+```bash
+npm run dev
+```
+
+### Build
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
 
 ## Essential React Concepts to Learn
 ### **Fundamentals**
