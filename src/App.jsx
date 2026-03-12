@@ -3,14 +3,23 @@ import { useState } from 'react'
 import './App.css'
 // import Todo from './Todo'
 import ToDo from './conditional-Rendering'
+import Library from './library'
 
 function App() {
   const time = 40;
 
+  const books = [
+    { id: 1, title: "Physics", author: "Author 1" ,price : 500},
+    { id: 2, title: "Chemistry", author: "Author 2" ,price : 600},
+    { id: 3, title: "Biology", author: "Author 3" ,price : 700}
+  ];
+
   return (
     <>
+      <Library books={books }></Library>
+
       <h1>Core Concepts</h1>
-    {/* <ToDO></ToDO> */}
+      {/* <ToDO></ToDO> */}
 
       <ToDo
         task='Learn React'
@@ -44,6 +53,8 @@ function App() {
       <User2 isLoggedIn={true}></User2>
       <User3 skills={["JavaScript", "React", "Node.js"]}></User3>
       <User4 user={{ name: "Afjal Hossain", age: 25 }}></User4> */}
+
+
     </>
 
   )
