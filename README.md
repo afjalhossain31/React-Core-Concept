@@ -1,5 +1,18 @@
-## Essential React Concepts to Learn
 
+my-vite-app/
+├── public/              # static assets (images, favicon, etc.)
+├── src/
+│   ├── assets/          # images, fonts, etc.
+│   ├── components/      # reusable UI pieces
+│   ├── App.jsx / App.tsx
+│   ├── main.jsx / main.tsx   # entry point
+│   └── index.css
+├── index.html           # single HTML entry point (Vite injects JS/CSS)
+├── vite.config.js       # Vite configuration
+├── package.json
+└── ...other config files
+
+## Essential React Concepts to Learn
 ### **Fundamentals**
 1. **Components** - Building blocks of React apps (Functional & Class components)
 2. **JSX** - JavaScript XML syntax
