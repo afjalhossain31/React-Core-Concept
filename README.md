@@ -1,7 +1,7 @@
 
 # React Core Concepts
 
-A React learning project built with Vite, covering fundamental to advanced React concepts.
+React is the library for web and native user interfaces. Build user  interfaces out of individual pieces called components written in JavaScript.
 
 ## Project Structure
 ```
