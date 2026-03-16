@@ -41,6 +41,22 @@
   color: #888;
 }
 
+.foods-container-parent {
+  width: 100%;
+}
+
+.foods-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .foods-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .Subject {
   color: rgb(245, 237, 237);
   margin: 10px;
