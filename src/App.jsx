@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css'
 // import Todo from './Todo'
 import ToDo from './conditional-Rendering'
