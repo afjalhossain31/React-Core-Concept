@@ -1,25 +1,43 @@
+import { Suspense } from 'react'
 import './App.css'
+
 // import Todo from './Todo'
-import ToDo from './conditional-Rendering'
-import Library from './library'
+// import ToDo from './conditional-Rendering'
+// import Library from './library'
+
+import { foodDataRes } from './api/foodDataRes'
+import FoodSection from './components/FoodSection/FoodSection'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
-  const time = 40;
+  // const time = 40;
 
-  const books = [
-    { id: 1, title: "Physics", author: "Author 1" ,price : 500},
-    { id: 2, title: "Chemistry", author: "Author 2" ,price : 600},
-    { id: 3, title: "Biology", author: "Author 3" ,price : 700}
-  ];
+  // const books = [
+  //   { id: 1, title: "Physics", author: "Author 1", price: 500 },
+  //   { id: 2, title: "Chemistry", author: "Author 2", price: 600 },
+  //   { id: 3, title: "Biology", author: "Author 3", price: 700 }
+  // ];
 
   return (
     <>
-      <Library books={books }></Library>
+
+
+
+      <Navbar></Navbar>
+      <Suspense fallback={<p>loading....</p>}>
+        <FoodSection foodDataRes={foodDataRes}></FoodSection>
+      </Suspense>
+      {/* <Library books={books}></Library> */}
+
+
+
+
+
 
       <h1>Core Concepts</h1>
       {/* <ToDO></ToDO> */}
 
-      <ToDo
+      {/* <ToDo
         task='Learn React'
         isDone={true} time={time}>
       </ToDo>
@@ -34,7 +52,7 @@ function App() {
         task='Master JavaScript'
         isDone={true}
         time={time}>
-      </ToDo>
+      </ToDo> */}
 
 
       {/* <Person></Person>
@@ -184,5 +202,7 @@ function Sports() {
     </div>
   )
 }
+
+
 
 export default App
